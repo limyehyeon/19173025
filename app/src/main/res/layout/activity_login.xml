@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_centerInParent="true"
+        android:background="#FAFAFA"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:layout_toLeftOf="@+id/loginButton"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/usernameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  사용자명 :  "
+                    android:textColor="#ff222222"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/usernameInput"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/usernameLabel"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/passwordLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  비밀번호 :  "
+                    android:textColor="#ff222222"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usernameInput"
+                    android:layout_alignBaseline="@id/passwordLabel"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="#E30613"
+            android:radius="10dp"
+            android:text="로그인"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-250dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="90dp"
+        app:srcCompat="@drawable/cgv" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textSize="16dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="158dp"
+        android:textStyle="bold"
+        android:textColor="#ff222222"
+        android:inputType="textPersonName"
+        android:text=" 현재 상영작" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="275dp"
+        app:srcCompat="@drawable/movie2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        app:srcCompat="@drawable/movie1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="275dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/movie3" />
+
+
+</RelativeLayout>
